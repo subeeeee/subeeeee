@@ -5,7 +5,11 @@
 <script>
   export default {
     name: "com",
+data () {
+      return{
 
+      }
+}
   }
 </script>
 
