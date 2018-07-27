@@ -1,17 +1,12 @@
 <template>
-<div>
-  aszxcvzxcvzxcvzxcv
-</div>
+  <div>
+    iphone
+  </div>
 </template>
 
 <script>
   export default {
-    name: "com",
-data () {
-      return{
-
-      }
-}
+    name: "iphone"
   }
 </script>
 

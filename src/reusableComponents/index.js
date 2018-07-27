@@ -1,8 +1,8 @@
-import ownership from './compontents/com'
+import com from './compontents/com'
 
 const component = {
   install:function (vue) {
-    vue.component('ownershipNo',ownership)
+    vue.component('com',com)
   }
 };
 

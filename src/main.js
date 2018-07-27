@@ -5,8 +5,9 @@ import App from './App'
 import router from './router'
 import store from './store/store'
 import filters from './filters/filters'
-Vue.config.productionTip = false
-
+import  reusableComponents from  './reusableComponents/index'
+Vue.config.productionTip = false;
+Vue.use(reusableComponents);
 /* eslint-disable no-new */
 
 
