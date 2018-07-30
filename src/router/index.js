@@ -15,7 +15,7 @@ export default new Router({
       component: empty
     },
     {
-      path: '/user/:id/:user',
+      path: '/user',
       component: user
     },
     {
@@ -23,7 +23,7 @@ export default new Router({
       component: phone,
       children:[
         {path:'iphone',name:'iphone',component: iphone},
-        {path:'huawei',name:'huawei',component: huawei},
+        {path:'huawei/:id/:name',name:'huawei',component: huawei},
 
       ]
     }

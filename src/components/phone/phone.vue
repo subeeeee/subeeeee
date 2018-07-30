@@ -15,8 +15,11 @@
           this.$router.push({
             name:'huawei',
             params:{
-              a:1,
-              b:4
+              id:1,
+              name:4
+            },
+            query:{
+              username:'123123123'
             }
           })
         }
