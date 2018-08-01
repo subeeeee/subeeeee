@@ -10,6 +10,7 @@
     name: "huawei",
     methods:{
       btnClick(){
+        this.$router.go(-1)
       }
     },
     created () {

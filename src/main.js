@@ -11,7 +11,6 @@ Vue.use(reusableComponents);
 /* eslint-disable no-new */
 
 
-
 new Vue({
   el: '#app',
   router,
@@ -19,4 +18,6 @@ new Vue({
   components: { App },
   template: '<App/>',
 
-})
+});
+
+

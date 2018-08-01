@@ -13,7 +13,7 @@
       methods :{
         routerpush(path){
           this.$router.push({
-            name:'huawei',
+            name:path,
             params:{
               id:1,
               name:4
