@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import store from './store/store'
 import filters from './filters/filters'
+import XLSX from 'xlsx'
+Vue.prototype.XLSX = XLSX
 import  reusableComponents from  './reusableComponents/index'
 Vue.config.productionTip = false;
 Vue.use(reusableComponents);

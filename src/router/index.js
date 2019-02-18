@@ -6,6 +6,20 @@ import empty from '@/components/empty'
 import phone from '@/components/phone/phone'
 import iphone from '@/components/phone/iphone/iphone'
 import huawei from '@/components/phone/huawei/huawei'
+
+
+
+
+
+
+
+
+
+import demoList from '@/demo/list'
+import excel from '@/demo/excel/excel'
+
+
+
 Vue.use(Router)
 
 export default new Router({
@@ -26,6 +40,17 @@ export default new Router({
         {path:'huawei/:id/:name',name:'huawei',component: huawei},
 
       ]
+    },
+    {
+      path: '/demoList',
+      name:'demoList',
+      component: demoList,
+
+    },{
+      path: '/excel',
+      name:'excel',
+      component: excel,
+
     }
   ]
 })

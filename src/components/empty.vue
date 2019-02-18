@@ -3,13 +3,22 @@
     asdfasdfasdfasdf
     <br>
     <button @click="btnclick">jump</button>
+    <button @click="btnclick('demo')">其余demo</button>
+
   </div>
 </template>
 <script>
   export default {
     name:'empty',
     methods:{
-      btnclick(){
+      btnclick(demo){
+        if(demo){
+          this.$router.push({
+            name : "demoList",
+
+          })
+          return
+        }
         this.$router.push({
           path : "/phone",
           // name:'HelloWorld',
