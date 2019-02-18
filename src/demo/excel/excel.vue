@@ -154,6 +154,21 @@
       // this.flash();
       // console.log(this.XLSX);
       // this.downloadExl([[1,2,3],[1,2,3],[1,2,3],[1,2,3],[1,2,3]])
+
+
+      // 创建一个txt文件并下载
+      function loadFile(fileName, content){
+        var aLink = document.createElement('a');
+        var blob = new Blob([content], {
+          type: 'text/plain'
+        });
+        var evt = new Event('click');
+        aLink.download = fileName;
+        aLink.href = URL.createObjectURL(blob);
+        aLink.click();
+        URL.revokeObjectURL(blob);
+      }
+      // loadFile('fileName','content')
     },
   }
 </script>
