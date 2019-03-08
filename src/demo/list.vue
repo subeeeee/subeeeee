@@ -1,6 +1,7 @@
 <template>
   <div>
     <button @click="btnclick('excel')">excel</button>
+    <button @click="btnclick('read-excel')">readExcel</button>
   </div>
 </template>
 
@@ -8,9 +9,9 @@
   export default {
     name: "demo-list",
     methods:{
-      btnclick(params){
+      btnclick(route){
         this.$router.push({
-          name:'excel'
+          name:route
         })
       }
     }

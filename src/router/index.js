@@ -17,6 +17,7 @@ import huawei from '@/components/phone/huawei/huawei'
 
 import demoList from '@/demo/list'
 import excel from '@/demo/excel/excel'
+import readExcel from '@/demo/excel/readExcel'
 
 
 
@@ -46,10 +47,17 @@ export default new Router({
       name:'demoList',
       component: demoList,
 
-    },{
+    },
+    {
       path: '/excel',
       name:'excel',
       component: excel,
+
+    },
+    {
+      path: '/readExcel',
+      name:'read-excel',
+      component: readExcel,
 
     }
   ]
