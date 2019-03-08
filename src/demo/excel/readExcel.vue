@@ -27,7 +27,7 @@
         reader.onload = e=>{
           let data = e.target.result;
           wb = this.XLSX.read(data,{
-            type:'file'
+            type:'binary'
           });
 console.log(wb)
           // console.log(wb.Sheets['法拍预算表'].D2.v)
