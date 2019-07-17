@@ -1,0 +1,254 @@
+/*
+ * Copyright (c) 2018-present, 网信智投, Inc.
+ *
+ * @Author: chenzhuanzhuan
+ * @Date: 2019-05-20 16:12:11
+ * @Last Modified by: chenzhuanzhuan
+ * @Last Modified time: 2019-05-21 15:47:05
+ * @Note 风险测评结果页
+ */
+.test-page-level {
+  .level-box {
+    margin: 50px 20px 0 20px;
+    font-size: 15px;
+    color: #4c4c4c;
+    .level-type {
+      line-height: 21px;
+      height: 21px;
+      .again {
+        font-size: 12px;
+        color: #1c82de;
+        padding-right: 6px;
+        margin-left: 10px;
+        border: 1px solid #1c82de;
+        padding-left: 6px;
+        line-height: 21px;
+        border-radius: 2px;
+      }
+    }
+    .level-test {
+      font-size: 40px;
+      color: #3378dd;
+      height: 40px;
+      line-height: 40px;
+      margin: 20px 0;
+      img {
+        width: 20px;
+        margin-left: 20px;
+        margin-bottom: 14px;
+      }
+    }
+    .level-text {
+      font-size: 14px;
+      color: #666;
+      margin: 14px 8px 34px 8px;
+      text-align: justify;
+      position: relative;
+      .close {
+        max-height: 26px;
+        overflow: hidden;
+        margin-bottom: 4px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .open {
+        overflow: auto;
+      }
+      .btn {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #bbb;
+      }
+    }
+    .level-line {
+      position: relative;
+      img {
+        min-height: 14px;
+      }
+      .float-sign {
+        width: 10px;
+        height: 20px;
+        background: #fff;
+        box-shadow: 0 0 4px 0 #76a7ff;
+        border-radius: 30px;
+        position: absolute;
+        top: 40%;
+        left: 52%;
+        margin-top: -10px;
+        margin-left: -5px;
+        transition: ease 1s;
+      }
+    }
+    .text {
+      font-size: 14px;
+      color: #666;
+      margin: 14px 4px;
+      span {
+        display: inline-block;
+      }
+    }
+  }
+  .group-box {
+    margin: 0 15px 70px 15px;
+    .r10pxline {
+      height: 10px;
+      background-color: #f2f2f2;
+    }
+    h1 {
+      font-size: 14px;
+      color: #666;
+      margin: 14px 0;
+    }
+    .link {
+      font-size: 16px;
+      color: #fff;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 3px;
+      text-align: center;
+      margin-top: 40px;
+      background-color: #1c82de;
+    }
+    .click-urls {
+      margin-top: 15px;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      justify-content: center;
+      -webkit-justify-content: center;
+      span {
+        font-size: 14px;
+        color: #1c82de;
+        font-weight: 400;
+        line-height: 25px;
+      }
+    }
+    .group-li {
+      position: relative;
+      min-height: 98px;
+      background: #fff;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      border-top: 1px solid #d9d9d9;
+      border-bottom: 1px solid #d9d9d9;
+      margin-top: -1px;
+      .left {
+        width: 30%;
+        padding-left: 16px;
+        p {
+          color: #b2b2b2;
+          font-size: 12px;
+        }
+        .num {
+          color: #ff5654;
+          font-size: 26px;
+          margin-bottom: -6px;
+        }
+      }
+      .right {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        padding: 0 16px 0 22px;
+        .top {
+          display: flex;
+          display: -webkit-flex;
+          align-items: center;
+          -webkit-align-items: center;
+          font-size: 18px;
+          color: #1b1b1b;
+          margin-bottom: -2px;
+          label {
+            padding: 0 4px;
+            height: 18px;
+            line-height: 18px;
+            background: #1c82de;
+            font-size: 12px;
+            color: #fff;
+            position: relative;
+            display: inline-block;
+            margin: 0 10px 4px 6px;
+            img {
+              position: absolute;
+              width: 6px;
+              height: 18px;
+            }
+            .img-left {
+              top: 0;
+              left: -6px;
+            }
+            .img-right {
+              top: 0;
+              right: -6px;
+            }
+          }
+        }
+        .bottom {
+          display: flex;
+          display: -webkit-flex;
+          flex-direction: row;
+          -webkit-flex-direction: row;
+          flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+          .tag-item {
+            height: 18px;
+            line-height: 18px;
+            border-radius: 2px;
+            border: 1px solid #999;
+            color: #666;
+            font-size: 12px;
+            padding: 0 2px;
+            margin-right: 3px;
+            margin-bottom: 3px;
+            display: inline-block;
+          }
+        }
+      }
+      .line {
+        width: 1px;
+        height: 40px;
+        background: #d8d8d8;
+      }
+      .label-fixed {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        background: #ff5654;
+        padding: 1px 4px;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0px;
+          left: -11px;
+          border-left: 0px solid transparent;
+          border-right: 12px solid #ff5654;
+          border-top: 20px solid transparent;
+          border-bottom: 0px solid transparent;
+        }
+      }
+    }
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.line-1px {
+  height: 1px;
+  background: #d9d9d9;
+  margin: 0 8px;
+}

@@ -1,0 +1,161 @@
+.redeem {
+  .scroll {
+    .asset {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      height: 120px;
+      background-color: #fff;
+      font-size: 12px;
+
+      .total {
+        font-size: 24px;
+      }
+      .name {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .share {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      align-items: center;
+      -webkit-align-items: center;
+      height: 50px;
+      background-color: #fff;
+      padding-right: 10px;
+      padding-left: 10px;
+
+      .text {
+        font-size: 16px;
+        width: 74px;
+        line-height: 30px;
+      }
+
+      .inputs {
+        font-size: 14px;
+        outline: none;
+        height: 50px;
+        background: none;
+        border: none;
+        margin-left: 2px;
+        margin-right: 10px;
+        flex: 1;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+
+      .redeemAll {
+        background-color: #eee;
+        border-radius: 5px;
+        font-size: 12px;
+        width: 68px;
+        line-height: 34px;
+        height: 34px;
+        text-align: center;
+        color: #4a4a4a;
+      }
+    }
+
+    .clearfloat:after {
+      display: block;
+      visibility: hidden;
+      clear: both;
+      content: '';
+    }
+
+    .expectArriveDate {
+      padding: 10px 10px;
+      display: flex;
+      display: -webkit-flex;
+      background-color: #fff;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+
+      span {
+        font-size: 14px;
+      }
+
+      .bank {
+        font-size: 14px;
+      }
+    }
+    .select {
+      .checkBox {
+        padding-left: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 12px;
+      }
+
+      .checkBox-1 {
+        background: url(../asset/checkbox-1.png);
+        background-size: 24px 22px;
+        background-position: 20px center;
+        background-repeat: no-repeat;
+      }
+
+      .checkBox-2 {
+        background: url(../asset/checkbox-2.png);
+        background-size: 22px 22px;
+        background-position: 20px center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .copyright {
+      position: absolute;
+      width: 100%;
+      bottom: 40px;
+      left: 0;
+    }
+
+    .get-now {
+      position: absolute;
+      width: 100%;
+      height: 40px;
+      background: #1c82de;
+      color: #fff;
+      line-height: 40px;
+      text-align: center;
+      bottom: 0;
+      left: 0;
+      font-size: 17px;
+    }
+    .noEnable {
+      background: #d8d8d8;
+    }
+  }
+  .fake-input-container {
+    color: #d8d8d8;
+    font-size: 14px !important;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
+  .fake-input {
+    display: flex;
+  }
+
+  .am-list-line::after {
+    display: none !important;
+  }
+}

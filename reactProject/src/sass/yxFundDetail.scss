@@ -1,0 +1,61 @@
+.yxFundDetail {
+  background-color: #ffffff;
+  padding: 0 15px;
+  height: auto;
+  .dian {
+    img {
+      width: 10px;
+      margin-right: 5px;
+    }
+    min-height: 44px;
+    padding: 10px 0;
+    background-color: #ffffff;
+    padding-left: 0px;
+    font-size: 14px;
+    overflow: visible;
+  }
+  .certificate {
+    img {
+      height: 192px;
+    }
+    height: 210px;
+    border: 1px solid #e6e6e6;
+    background-color: #f2f2f2;
+    border-radius: 2px;
+    padding: 9px 0px;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .businessLicense {
+    img {
+      height: 232px;
+    }
+    height: 251px;
+    margin-top: 10px;
+    border: 1px solid #e6e6e6;
+    background-color: #f2f2f2;
+    border-radius: 2px;
+    padding: 9px 0px;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .FundDetailFoot {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    font-size: 12px;
+    color: #4d4f51;
+    margin-top: 16px;
+    margin-bottom: 38px;
+    span {
+      height: 17px;
+      line-height: 17px;
+    }
+    //跳转到权益须知
+    .toyxNotice {
+      color: #0076ff;
+      text-decoration: underline;
+    }
+  }
+}

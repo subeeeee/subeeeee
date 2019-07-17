@@ -1,0 +1,52 @@
+.fh-detail {
+  .my-count {
+    text-align: center;
+    padding: 20px 0;
+    background: #fff;
+
+    .unit {
+      font-size: 14px;
+      color: #909090;
+    }
+    .num {
+      font-size: 38px;
+      color: #ee4634;
+      height: 38px;
+      line-height: 38px;
+    }
+    .name {
+      font-size: 14px;
+      color: #909090;
+    }
+  }
+
+  .line1px {
+    width: 100%;
+    height: 1px;
+    background: #e6e6e6;
+  }
+
+  .line10px {
+    width: 100%;
+    height: 10px;
+  }
+
+  .space20px {
+    height: 20px;
+  }
+
+  .text-row {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    font-size: 16px;
+    color: #4d4f51;
+    padding: 10px 18px;
+    background: #fff;
+  }
+}

@@ -1,0 +1,55 @@
+.vConfirm {
+  height: 44px;
+
+  width: 100%;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+
+  .vConfirmRow {
+    display: flex;
+    flex-direction: row-reverse;
+    .tvConfirm {
+      padding-right: 20px;
+      padding-left: 20px;
+      height: 100%;
+      // width: 100px;
+      color: #0075ff;
+      line-height: 44px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}
+
+.am-number-keyboard-item {
+  height: 54px !important;
+}
+
+.fake-input.focus:after {
+  top: 0px !important;
+  border-right: 1px solid #0075ff !important;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  html:not([data-scale]) .vConfirm {
+    border-bottom: none;
+  }
+  html:not([data-scale]) .vConfirm::after {
+    content: '';
+    background-color: #ddd;
+    display: block;
+    z-index: 1;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}

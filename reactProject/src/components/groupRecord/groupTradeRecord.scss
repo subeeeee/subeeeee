@@ -1,0 +1,140 @@
+.fundtrade-record {
+  .top-fundName {
+    height: 44px;
+    padding-left: 15px;
+    line-height: 44px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: center;
+    -webkit-align-items: center;
+    .first-span {
+      display: inline-block;
+      max-width: 80%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .item-detail {
+    background: #ffffff;
+    height: 64px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: center;
+    -webkit-ajustify-content: center;
+    align-content: center;
+    -webkit-align-content: center;
+    .left-layout {
+      display: flex;
+      display: -webkit-flex;
+      flex: 1;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      justify-content: center;
+      -webkit-ajustify-content: center;
+      .fund-name {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #000000;
+      }
+      .fail-color {
+        color: #ee4634;
+      }
+      .date-txt {
+        margin-top: 4px;
+        color: #909090;
+        font-size: 12px;
+        line-height: 17px;
+      }
+    }
+    .value-name {
+      font-size: 14px;
+      line-height: 64px;
+      font-weight: 400;
+      color: #000000;
+    }
+    .img-layout {
+      margin-left: 15px;
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      justify-content: center;
+      -webkit-ajustify-content: center;
+      align-items: center;
+      -webkit-align-items: center;
+      .img {
+        width: 8px;
+        height: 13px;
+      }
+    }
+  }
+  .green {
+    color: #45b18b !important;
+  }
+  .red {
+    color: #ee4634 !important;
+  }
+  .grey {
+    color: #909090 !important;
+  }
+  .thin-line {
+    position: relative;
+  }
+  .thin-line:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #e6e6e6;
+    color: #e6e6e6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+  .no-data {
+    width: 100%;
+    text-align: center;
+    margin-top: 140px;
+    img {
+      width: 125px;
+      height: 117px;
+    }
+    span {
+      display: block;
+      margin-top: 30px;
+      color: #909090;
+      font-size: 15px;
+    }
+  }
+  .more {
+    text-align: center;
+    font-size: 14px;
+    color: #909090;
+    padding: 10px 0;
+    background: #fff;
+  }
+}
+
+.green {
+  color: #45b18b !important;
+}
+.red {
+  color: #ee4634 !important;
+}

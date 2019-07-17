@@ -1,0 +1,54 @@
+.textPage {
+  textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 5px 40px 5px 10px;
+    font-size: 15px;
+    color: #4d4f51;
+    font-weight: 400;
+  }
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #bfbfbf;
+  }
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #bfbfbf;
+  }
+  textarea:-ms-input-placeholder {
+    color: #bfbfbf;
+  }
+  textarea::-webkit-input-placeholder {
+    color: #bfbfbf;
+  }
+  .smallErr {
+    width: 10%;
+    min-height: 91px;
+    position: relative;
+    top: -105px;
+    left: 90%;
+  }
+  .clickErr {
+    color: #ee4634;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    display: none;
+    padding: 0 15px 0 15px;
+    font-weight: 500;
+  }
+  .showClickErr {
+    color: #ee4634;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    display: block;
+    padding: 0 15px 0 15px;
+    font-weight: 500;
+  }
+}

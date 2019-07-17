@@ -1,0 +1,37 @@
+.errorPage {
+  width: 100%;
+  background-color: #efeff4;
+  .pic {
+    width: 100%;
+    img {
+      display: block;
+      width: 120px;
+      height: 113px;
+      margin: 0 auto;
+      margin-top: 147px;
+    }
+  }
+  .question {
+    text-align: center;
+    margin-top: 37px;
+    font-size: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+    color: #909090;
+  }
+  .resets {
+    text-align: center;
+    font-size: 15px;
+    color: #909090;
+  }
+  .returns {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #909090;
+    margin: 0 auto;
+    color: #909090;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 15px;
+  }
+}

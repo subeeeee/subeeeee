@@ -1,0 +1,220 @@
+.yingmi-header {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  background-color: #1c82de;
+  height: 30px;
+  align-items: center;
+  -webkit-align-items: center;
+  font-size: 12px;
+
+  .lock {
+    width: 12px;
+    height: 16px;
+    margin-left: 16px;
+    margin-right: 7px;
+    background: url(../asset/lock.png);
+    background-size: 12px 16px;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+  }
+
+  .text {
+    color: #fff;
+  }
+}
+
+.rule {
+  .tab {
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    height: 44px;
+    line-height: 44px;
+  }
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  .active {
+    color: #1c82de;
+    border-bottom: 2px solid #1c82de;
+  }
+
+  .rule-name {
+    padding-left: 20px;
+    height: 30px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+  }
+
+  .group {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    padding-top: 27px;
+    padding-bottom: 1px;
+    width: 100%;
+    font-weight: 400;
+
+    .group-item {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      flex: 1;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      .circle-line {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        align-items: center;
+        -webkit-align-items: center;
+        flex: 1;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        position: relative;
+
+        p {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+        }
+
+        .circle {
+          width: 23px;
+          height: 23px;
+          line-height: 23px;
+          text-align: center;
+          color: #fff;
+          font-size: 15px;
+          background: #98c2fb;
+          border-radius: 50%;
+          margin: 0 18px;
+        }
+
+        .circle-sp {
+          height: 27px;
+          font-size: 12px;
+        }
+
+        .line {
+          flex: 1;
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+          height: 1px;
+          background: #98c2fb;
+        }
+
+        .space {
+          flex: 1;
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+          height: 2px;
+          background: white;
+        }
+      }
+
+      .rule-item {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        align-items: center;
+        -webkit-align-items: center;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 14px;
+        color: #999;
+
+        .item0 {
+          color: #4d4f51;
+          line-height: 17px;
+          font-size: 12px;
+        }
+
+        .item1 {
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+.pop-window {
+  position: fixed;
+  height: 110%;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999999;
+  top: 0;
+  left: 0;
+
+  .pop-cell {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    background-color: #fff;
+    padding: 8px 0;
+    min-height: 70px;
+    max-width: 80%;
+    border-radius: 4px;
+    font-size: 16px;
+
+    .pop-title {
+      margin-top: 5px;
+      font-weight: 400;
+    }
+
+    .pop-info {
+      padding-bottom: 5px;
+
+      .pop-info-text {
+        padding: 6px 12px;
+        font-size: 14px;
+      }
+
+      .pop-info-list {
+        margin: 0 12px;
+        font-size: 14px;
+        color: #868686;
+        border-top: 1px solid #eee;
+        padding: 4px 0;
+
+        li {
+          display: flex;
+          display: -webkit-flex;
+          justify-content: space-between;
+          -webkit-justify-content: space-between;
+        }
+      }
+    }
+
+    .pop-btn {
+      margin-top: 8px;
+      color: #2c79dd;
+    }
+  }
+}

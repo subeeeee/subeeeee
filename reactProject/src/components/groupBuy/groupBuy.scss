@@ -1,0 +1,567 @@
+.group-buy {
+  .pop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #555;
+    opacity: 0.4;
+    z-index: 100;
+  }
+
+  .buy-rule {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #000;
+    background: #fff;
+    font-size: 14px;
+    padding-left: 15px;
+
+    .titleName {
+      font-weight: 400;
+      max-width: 70%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .feeTitleName {
+      font-weight: 400;
+      max-width: 70%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #909090 !important;
+      font-size: 14px;
+      margin-right: 15px;
+    }
+
+    .right-text {
+      padding-right: 15px;
+      color: #909090;
+    }
+  }
+
+  .pop-window {
+    height: 320px;
+    width: 280px;
+    z-index: 10000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -160px 0 0 -140px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    font-size: 16px;
+
+    .main {
+      height: 260px;
+      width: 100%;
+      border-radius: 5px 5px 0 0;
+      box-sizing: border-box;
+      padding: 20px;
+
+      .alert-type {
+        height: 50px;
+        line-height: 50px;
+        font-size: 25px;
+        text-align: center;
+      }
+
+      .alert-mess {
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+      }
+
+      .alert-info {
+        line-height: 30px;
+      }
+    }
+
+    .btn-place {
+      height: 60px;
+      width: 100%;
+      background: #7f7dff;
+      line-height: 60px;
+      border-radius: 0 0 5px 5px;
+      color: #fff;
+
+      .button-1 {
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+        border-right: 1px solid #fff;
+        box-sizing: border-box;
+      }
+
+      .button-2 {
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+
+  .bank-card-info {
+    box-sizing: border-box;
+    height: 78px;
+    width: 100%;
+    padding-left: 80px;
+    background: url(./images/input-card.png);
+    background-size: 40px 28px;
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+
+    .bank-name {
+      height: 35px;
+      line-height: 35px;
+      padding-top: 8px;
+      font-size: 16px;
+      color: #4a4a4a;
+    }
+
+    .card-num-type {
+      height: 25px;
+      line-height: 25px;
+      font-size: 12px;
+      color: #979797;
+    }
+  }
+
+  .mid {
+    height: 10px;
+    width: 100%;
+    background: #f2f2f2;
+  }
+  .white {
+    background: #fff;
+    padding-top: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    .money-input {
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      height: 84px;
+      border: 1px solid #e6e6e6;
+      padding-left: 6px;
+      padding-right: 6px;
+      .inputed {
+        color: #000;
+        width: 100%;
+        line-height: 35px;
+        border: 0;
+        outline: none;
+        font-size: 30px;
+      }
+
+      :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #c8c8c8;
+        font-size: 22px;
+      }
+
+      ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #c8c8c8;
+        font-size: 22px;
+      }
+
+      input:-ms-input-placeholder {
+        color: #c8c8c8;
+        font-size: 22px;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #c8c8c8;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .alert-text {
+    font-size: 14px;
+    padding-left: 14px;
+    background: #fff;
+    padding-bottom: 16px;
+    color: #909090;
+
+    p {
+      height: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .red {
+    color: #ee4634;
+  }
+
+  .ym-checkbox {
+    color: #979797;
+    font-size: 10px;
+    margin: -15px 20px;
+  }
+
+  .ym-pos {
+    text-align: center;
+    color: #979797;
+    font-size: 10px;
+  }
+
+  .prompt-p {
+    color: #ee4634;
+    font-size: 14px;
+    margin: 8px 18px 10px 18px;
+  }
+
+  .confrim {
+    color: #909090;
+    font-size: 12px;
+    margin-top: 18px;
+    margin-left: 10px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    .confrim-place {
+      height: 19px;
+      width: 19px;
+      display: inline-block;
+    }
+
+    .confrim-pre {
+      background: url(./images/checked.png);
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+      background-position: center center;
+    }
+
+    .confrim-nor {
+      background: url(./images/unchecked.png);
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+      background-position: center center;
+    }
+
+    .confrim-text {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 12px;
+    }
+
+    a {
+      color: #7f7dff;
+    }
+  }
+
+  .fund-list {
+    .tr {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+      padding: 2px 10px;
+      font-size: 12px;
+      height: 26px;
+      align-items: center;
+      -webkit-align-items: center;
+      background: #fff;
+
+      .name {
+        width: 32%;
+        text-align: left;
+      }
+
+      span {
+        width: 17%;
+        text-align: center;
+      }
+    }
+  }
+
+  .more-btn {
+    color: #1c82de;
+    font-size: 14px;
+    padding: 6px 0;
+    text-align: center;
+    background: #fff;
+
+    img {
+      height: 10px;
+      margin-left: 6px;
+    }
+  }
+
+  .input-mess {
+    color: #979797;
+    margin: 0 20px;
+    font-size: 14px;
+  }
+
+  .pay-title {
+    height: 44px;
+    line-height: 44px;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 15px;
+    background: #fff;
+  }
+
+  .pay-bank {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 12px;
+    color: #909090;
+    background: #fff;
+    font-weight: 400;
+    img {
+      width: 10px;
+      height: 10px;
+      margin-right: 7px;
+    }
+    .bottom-info {
+      margin-left: 17px;
+      line-height: 12px;
+    }
+  }
+
+  .pay-line {
+    height: 1px;
+    background: #fff;
+
+    .line {
+      height: 1px;
+      width: 100%;
+      background: #e6e6e6;
+    }
+  }
+
+  .wholePay-line {
+    height: 1px;
+    background: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    .line {
+      height: 1px;
+      width: 100%;
+      background: #e6e6e6;
+    }
+  }
+  .line10 {
+    height: 10px;
+  }
+
+  .select-pay {
+    em {
+      color: #1c82de !important;
+      font-size: 14px;
+    }
+  }
+
+  .checksBad {
+    width: 100%;
+    padding-bottom: 2px;
+    line-height: 20px;
+    padding-left: 10px;
+    font-size: 12px;
+    background: #efeff4;
+    color: #909090;
+    .confrim-place {
+      height: 19px;
+      width: 19px;
+      display: inline-block;
+      float: left;
+    }
+    .confrim-pre {
+      background: url(./images/checked.png);
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+      background-position: center center;
+    }
+    .confrim-nor {
+      background: url(./images/unchecked.png);
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+      background-position: center center;
+    }
+  }
+
+  .next-btn {
+    margin: 60px 15px 0px 15px;
+    background-color: #1c82de;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 17px;
+  }
+
+  .showGroupList {
+    display: block;
+  }
+  .hideGroupList {
+    display: none;
+  }
+
+  .redColor {
+    color: red;
+  }
+  .checkBoxDiv {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    img {
+      width: 14px;
+      height: 14px;
+      margin-right: 5px;
+    }
+    .agreenment {
+      font-size: 12px;
+      color: #909090;
+      font-weight: 400;
+    }
+    .caifu {
+      color: #1c82de;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+
+  .showList {
+    font-size: 12px;
+    padding-left: 14px;
+    background: #fff;
+    text-align: center;
+    // color: #1c82de;
+    color: #393939;
+    display: block;
+    line-height: 44px;
+  }
+
+  .hideList {
+    font-size: 14px;
+    padding-left: 14px;
+    background: #fff;
+    text-align: center;
+    color: #1c82de;
+    display: none;
+  }
+
+  .tipsClass {
+    background: #fff;
+    font-size: 14px;
+    text-align: left;
+    color: #b7b7b7;
+    border-bottom: 1px solid #e6e6e6;
+    // line-height: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .listImg {
+    margin-left: 5px;
+    width: 13px;
+    height: 7px;
+  }
+
+  .listTable {
+    width: 100%;
+    background-color: #fff;
+    font-size: 12px;
+    color: #999999;
+
+    .theadClass {
+      line-height: 41px;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    .tbodyClass {
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    .theadFundName {
+      padding-left: 15px;
+      width: 28%;
+    }
+
+    .theadOther {
+      // width: 14%;
+      text-align: center;
+    }
+
+    .bodyTr {
+      line-height: 40px;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    .tbodyFundName {
+      font-size: 12px;
+      color: #666666;
+      padding-left: 12px;
+      word-break: break-all;
+      line-height: 20px;
+    }
+
+    .tbodyOther {
+      font-size: 12px;
+      color: #666666;
+      // padding-left: 10px;
+      text-align: center;
+    }
+    .tbodyOthers {
+      flex: 1;
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
+    }
+  }
+}
+.fake-input-container {
+  color: #c8c8c8;
+  font-size: 22px;
+}
+.fake-input {
+  color: #000 !important;
+  width: 100%;
+  line-height: 35px !important;
+  border: 0 !important;
+  outline: none !important;
+  font-size: 30px !important;
+}
+.am-list-item {
+  padding-left: 0 !important;
+}

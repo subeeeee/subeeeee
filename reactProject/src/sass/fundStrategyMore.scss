@@ -1,0 +1,153 @@
+.fund-strategy-more {
+  background-color: #efeff4;
+  .top-img {
+    height: 150px;
+    width: 100%;
+    background-color: yellowgreen;
+  }
+  .fund-item {
+    background-color: #ffffff;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    // height: 165px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    align-items: center;
+
+    .fund-buy {
+      border-radius: 3px;
+      width: 92%;
+      background-color: #1c82de;
+      height: 40px;
+      font-size: 17px;
+      color: #ffffff;
+      margin-top: 18px;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    .fund-info {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      padding-left: 20px;
+      padding-right: 20px;
+      .fund-income {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+
+        .income {
+          color: #909090;
+          font-size: 12px;
+        }
+      }
+
+      .fund-line {
+        height: 40px;
+        background-color: #e6e6e6;
+        width: 1px;
+      }
+
+      .fund-detail-info {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+
+        .labelTitle {
+          font-size: 18px;
+          color: #1b1b1b;
+          font-weight: 400;
+          margin-bottom: 10px;
+        }
+
+        .label-layout {
+          display: flex;
+          display: -webkit-flex;
+          flex-direction: row;
+          -webkit-flex-direction: row;
+          .label {
+            height: 18px;
+            border-radius: 1px;
+            border: 1px #4d4f51 solid;
+            color: #4d4f51;
+            line-height: 18px;
+            font-size: 10px;
+            padding-left: 4px;
+            padding-right: 4px;
+            text-align: center;
+            font-weight: 400;
+          }
+
+          .margin-right {
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+
+    .fund-title {
+      color: #000000;
+      font-size: 20px;
+      text-align: left;
+      font-weight: 400;
+      margin-top: 20px;
+    }
+
+    .money {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 48px;
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+    .unit {
+      font-size: 12px;
+    }
+    .plus-minus {
+      font-size: 10px;
+    }
+    .red {
+      color: #ee4634;
+    }
+    .green {
+      color: #388e3c;
+    }
+    .date-info {
+      color: #909090;
+      font-size: 12px;
+    }
+  }
+  .line10 {
+    height: 10px;
+  }
+  .fund-strategy-info {
+    background-color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    .fund-title {
+      color: #000000;
+      font-size: 20px;
+      text-align: left;
+      font-weight: 400;
+    }
+    .fund-subtitle {
+      margin-top: 4px;
+      color: #909090;
+      font-size: 14px;
+      text-align: left;
+    }
+  }
+}

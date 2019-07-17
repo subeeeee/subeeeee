@@ -1,0 +1,61 @@
+.dialog-box {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  // height: 245px;
+  .box-contents {
+    position: relative;
+    z-index: 10001;
+    margin: 0 10%;
+    background: #fff;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 52px;
+    margin-right: 52px;
+    .topContent {
+      padding-left: 20px;
+      padding-right: 20px;
+      .box-title {
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        font-size: 17px;
+        color: #000000;
+        font-weight: 500;
+        border-bottom: 1px solid #d9d9d9;
+        font-family: PingFangSC-Light;
+      }
+
+      .box-text {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 15px;
+        margin-bottom: 48px;
+        padding-left: 3px;
+        padding-right: 3px;
+        color: #4d4f51;
+        font-weight: 400;
+        text-align: left;
+      }
+    }
+  }
+  .box-btns {
+    border-top: 1px solid #d9d9d9;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    font-size: 17px;
+    color: #0076ff;
+    font-weight: 500;
+  }
+}

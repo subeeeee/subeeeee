@@ -1,0 +1,207 @@
+.fixedInvest {
+  background-color: #efeff4;
+  height: 100%;
+  .cars {
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding-left: 13px;
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 8px;
+      margin-top: 12px;
+      img {
+        width: 34px;
+        height: 34px;
+      }
+    }
+    .backCard {
+      font-size: 16px;
+      color: #000000;
+      font-weight: 400;
+      font-family: PingFangSC-Regular;
+    }
+    .rules {
+      font-size: 12px;
+      color: #909090;
+      font-family: PingFangSC-Regular;
+    }
+  }
+  .investMoney {
+    // height: 94px;
+    background-color: #ffffff;
+    .icon-user {
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      margin-top: 10px;
+      margin-left: 17px;
+      width: 27px;
+      height: 27px;
+    }
+    .moneyInvest {
+      width: 100%;
+      border-bottom: 1px solid #e6e6e6;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      font-size: 16px;
+      color: #000000;
+      // font-weight: 400;
+      height: 50px;
+      // text-indent: 55px;
+      outline: none;
+      font-weight: 500;
+      letter-spacing: 0px;
+      tap-highlight-color: rgba(0, 0, 0, 0);
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    :-moz-placeholder {
+      color: #c7c7c7;
+      font-size: 16px;
+      letter-spacing: 0px;
+    }
+    ::-moz-placeholder {
+      color: #c7c7c7;
+      font-size: 16px;
+      letter-spacing: 0px;
+    }
+    input:-ms-input-placeholder {
+      color: #c7c7c7;
+      font-size: 16px;
+      letter-spacing: 0px;
+    }
+    input::-webkit-input-placeholder {
+      color: #c7c7c7;
+      font-size: 16px;
+      letter-spacing: 0px;
+    }
+    .contentText {
+      font-size: 12px;
+      color: #909090;
+      padding: 5px 16px;
+      .pay {
+        text-decoration: line-through;
+        font-weight: 400;
+        padding-left: 5px;
+      }
+      .redPay {
+        font-size: 12px;
+        color: #ee4634;
+        font-weight: 400;
+      }
+    }
+  }
+  .minimum {
+    height: 20px;
+    background: #efeff4;
+    color: #ee4634;
+    font-size: 12px;
+    padding-left: 12px;
+    line-height: 30px;
+    img {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+  .fixedPeriod {
+    height: 94px;
+    background: #ffffff;
+    margin-top: 10px;
+
+    .period {
+      border-bottom: 1px solid #e6e6e6;
+      // height: 50px;
+      .fixeds {
+        padding-left: 16px;
+        font-size: 16px;
+        color: #4c4c4c;
+        font-weight: 400;
+        // line-height: 50px;
+      }
+    }
+    .nextTime {
+      line-height: 43px;
+      font-size: 12px;
+      color: #909090;
+      padding-left: 15px;
+      display: flex;
+      align-items: center;
+      .specificTime {
+        font-size: 12px;
+        color: #2981e2;
+      }
+      img {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+      }
+    }
+  }
+  .agrrenOrunGrren {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    align-items: center;
+    padding-left: 16px;
+
+    img {
+      width: 14px;
+      height: 14px;
+      margin-right: 5px;
+    }
+    .alreadyRead {
+      display: inline-block;
+      font-size: 12px;
+      color: #909090;
+      font-weight: 400;
+    }
+    .agreement {
+      display: inline-block;
+      font-size: 12px;
+      color: #1c82de;
+      font-weight: 400;
+    }
+  }
+  .confirmBtn {
+    width: 90%;
+    height: 48px;
+    background: #d8d8d8;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    margin-top: 25px;
+    margin-left: 19px;
+    margin-right: 19px;
+    border-radius: 3px;
+  }
+  .confirmBtns {
+    width: 90%;
+    height: 48px;
+    background: #1c82de;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    margin-top: 25px;
+    margin-left: 19px;
+    margin-right: 19px;
+    border-radius: 3px;
+  }
+  .fake-input-container {
+    color: #c7c7c7;
+    font-size: 16px !important;
+    letter-spacing: 0px;
+    text-indent: 55px;
+  }
+  .fake-input {
+    color: #000;
+  }
+  .am-list-line::after {
+    display: none !important;
+  }
+}

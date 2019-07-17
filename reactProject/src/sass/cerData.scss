@@ -1,0 +1,46 @@
+.textPage {
+  .longTime {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    font-size: 14px;
+    height: 50px;
+    width: 100%;
+    // border-bottom: 1px solid #e6e6e6;
+    background: #fff;
+    span {
+      padding: 0 15px 0 15px;
+      color: #4d4f51;
+      font-weight: 400;
+      img {
+        width: 8px;
+        height: 13px;
+        margin-left: 8px;
+      }
+      .imgs {
+        width: 16px;
+        height: 13px;
+      }
+    }
+  }
+  .thin-line {
+    position: relative;
+  }
+  .thin-line:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #e6e6e6;
+    color: #e6e6e6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}

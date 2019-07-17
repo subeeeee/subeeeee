@@ -1,0 +1,53 @@
+/*
+ * Copyright (c) 2018-present, 网信智投, Inc.
+ *
+ * @Author: chenzhuanzhuan
+ * @Date: 2018-12-19 12:04:21
+ * @Last Modified by: chenzhuanzhuan
+ * @Last Modified time: 2018-12-27 13:48:31
+ * @Note 网信四期个人信息页面
+ */
+.allPersonalInformation {
+  .personalInfor {
+    height: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 50px;
+    background-color: #ffffff;
+    span {
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .img {
+      width: 8px;
+      height: 13px;
+    }
+    .imged {
+      display: inline-block;
+      width: 8px;
+      height: 13px;
+      margin-left: 5px;
+    }
+  }
+  .thin-line {
+    position: relative;
+  }
+  .thin-line:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #e6e6e6;
+    color: #e6e6e6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}

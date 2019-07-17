@@ -1,0 +1,56 @@
+.riskWarning {
+  .main {
+    background: #fff;
+    .top-title {
+      color: #030303;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      font-weight: 400;
+    }
+    .txt-content {
+      color: #4d4f51;
+      font-size: 12px;
+      line-height: 17px;
+      text-indent: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-weight: 400;
+    }
+    .red {
+      color: #ee4634;
+    }
+  }
+  .checks {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    line-height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #4d4f51;
+    .confrim-place {
+      height: 19px;
+      width: 19px;
+      display: inline-block;
+      margin-right: 4px;
+    }
+    .confrim-pre {
+      background: url(../asset/checked.png);
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+      background-position: center center;
+    }
+    .confrim-nor {
+      background: url(../asset/unchecked.png);
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+      background-position: center center;
+    }
+    .red {
+      color: #ee4634;
+    }
+  }
+}

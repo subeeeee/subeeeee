@@ -1,0 +1,68 @@
+.dividend-main {
+  background-color: #efeff4;
+  .content {
+    height: 68px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: white;
+
+    .confrim-place {
+      height: 68px;
+      width: 30px;
+      display: inline-block;
+    }
+
+    .confrim-pre {
+      background: url(../asset/check-bonus.png);
+      background-repeat: no-repeat;
+      background-size: 16px 13px;
+      background-position: center center;
+      float: right;
+    }
+
+    .confrim-nor {
+      float: right;
+    }
+
+    .text-body {
+      .text-bonus {
+        font-size: 16px;
+        line-height: 32px;
+        color: black;
+        text-align: left;
+      }
+
+      .text-include {
+        font-size: 12px;
+        line-height: 16px;
+        color: black;
+        text-align: left;
+      }
+    }
+
+    .text {
+      font-size: 16px;
+      color: black;
+      float: left;
+      text-align: left;
+    }
+  }
+
+  .line10 {
+    position: relative;
+  }
+  .line10:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #eee;
+    color: #eee;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}

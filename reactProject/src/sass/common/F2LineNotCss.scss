@@ -1,0 +1,99 @@
+.detailChartNotCurrency {
+  background: #fff;
+  .currency {
+    padding-bottom: 10px;
+
+    .tipinfo {
+      float: left;
+      position: absolute;
+      height: 30px;
+      width: 100%;
+    }
+
+    .line_date {
+      margin: 0px 14px 0 14px;
+      color: #030303;
+      font-size: 12px;
+      display: flex;
+      flex-direction: row;
+      height: 30px;
+      line-height: 30px;
+      background-color: #f3faff;
+      align-items: center;
+      .line_date_span {
+        flex: 1;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+      .line_date_span_r {
+        text-align: right;
+        .sy_red {
+          color: #ee4634;
+          font-size: 12px;
+          padding-left: 5px;
+        }
+        .sy_green {
+          color: #00d348;
+          padding-left: 5px;
+        }
+        .sy_grey {
+          color: #4d4f51;
+        }
+      }
+    }
+
+    .line_time_date {
+      margin: 5px 14px 0 14px;
+      font-size: 12px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      .sy_red {
+        color: #ee4634;
+        font-size: 12px;
+        padding-left: 5px;
+      }
+      .sy_green {
+        color: #00d348;
+        padding-left: 5px;
+      }
+    }
+
+    .tab_p {
+      text-align: center;
+      button {
+        width: 68px;
+        height: 20px;
+        line-height: 18px;
+        text-align: center;
+        border: 1px solid rgb(144, 144, 144);
+        margin-left: -1px;
+        background: #fff;
+        color: #909090;
+        font-size: 12px;
+        outline: none;
+      }
+      .left_border {
+        border-left: 1px solid rgb(28, 130, 222);
+      }
+
+      .left {
+        font-size: 12px;
+        border-left: 1px solid rgb(28, 130, 222);
+        border-radius: 2px 0 0 2px;
+      }
+
+      .right {
+        font-size: 12px;
+        border-radius: 0 2px 2px 0;
+      }
+      .active {
+        font-size: 12px;
+        border: 1px solid rgb(28, 130, 222);
+        color: #1c82de;
+        font-weight: 500;
+      }
+    }
+  }
+}

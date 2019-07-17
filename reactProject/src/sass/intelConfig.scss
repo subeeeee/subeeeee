@@ -1,0 +1,33 @@
+@import './common/mixin.scss';
+.intel-main {
+  .topPic {
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    margin-bottom: 45px;
+    .firPic {
+      width: 100%;
+    }
+  }
+
+  .goes {
+    height: 44px;
+    line-height: 44px;
+    background: -webkit-linear-gradient(to right, #00ffec, #1289b4);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(to right, #00ffec, #1289b4);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(to right, #00ffec, #1289b4);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #00ffec, #1289b4);
+    /* 标准的语法 */
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+  }
+}

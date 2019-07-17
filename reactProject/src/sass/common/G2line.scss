@@ -1,0 +1,208 @@
+.g2-box {
+  background: #fff;
+
+  .chart-box {
+    width: auto;
+    padding: 0 16px;
+
+    .map-title {
+      padding: 0 14px;
+      position: relative;
+
+      .line-desc {
+        span {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          display: inline-block;
+          margin-right: 1px;
+        }
+        .huiniu-line {
+          width: 50%;
+          color: #9a9a9a;
+          font-size: 12px;
+          display: inline-block;
+
+          span {
+            background: #3378dd;
+          }
+        }
+
+        .simple-line {
+          width: 50%;
+          color: #9a9a9a;
+          font-size: 12px;
+          display: inline-block;
+          margin: 20px 0;
+
+          span {
+            background: #ff4100;
+          }
+        }
+      }
+
+      .map-change {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 150px;
+        height: 32px;
+
+        .sel {
+          height: 30px;
+          width: 70px;
+          line-height: 30px;
+          color: #9392ff;
+          background: #f4f4ff;
+          border: 1px solid #9392ff;
+          text-align: center;
+          display: inline-block;
+          border-radius: 5px;
+        }
+
+        .nor {
+          height: 30px;
+          width: 70px;
+          line-height: 30px;
+          color: #979797;
+          background: #fff;
+          border: 1px solid #fff;
+          text-align: center;
+          display: inline-block;
+        }
+      }
+    }
+
+    .time-list {
+      li {
+        width: 33.3%;
+        float: left;
+      }
+    }
+
+    p {
+      text-align: center;
+      padding: 16px 0;
+
+      button {
+        width: 68px;
+        height: 20px;
+        line-height: 18px;
+        text-align: center;
+        border: 1px solid #a3b6cd;
+        margin-left: -1px;
+        background: #fff;
+        color: #909090;
+        font-size: 12px;
+
+        &:active {
+          outline: none;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .left {
+        font-size: 12px;
+        border-left: 1px solid #a3b6cd;
+        border-radius: 3px 0 0 3px;
+      }
+
+      .right {
+        font-size: 12px;
+        border-radius: 0 2px 2px 0;
+      }
+
+      .active {
+        font-size: 12px;
+        border: 1px solid #1c82de;
+        background: #fff;
+        color: #1c82de;
+      }
+    }
+
+    ul {
+      overflow: hidden;
+      margin-top: -10px;
+
+      li {
+        width: 33.3%;
+        float: left;
+        font-size: 10px;
+        line-height: 14px;
+        color: #666;
+        text-align: center;
+      }
+    }
+  }
+
+  .map-title {
+    padding: 0 14px;
+    position: relative;
+
+    .line-desc {
+      span {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 1px;
+      }
+      .huiniu-line {
+        width: 50%;
+        color: #9a9a9a;
+        font-size: 12px;
+        display: inline-block;
+
+        span {
+          background: #3378dd;
+        }
+      }
+
+      .simple-line {
+        width: 50%;
+        color: #9a9a9a;
+        font-size: 12px;
+        display: inline-block;
+        margin: 20px 0;
+
+        span {
+          background: #ff4100;
+        }
+      }
+    }
+
+    .map-change {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 150px;
+      height: 32px;
+
+      .sel {
+        height: 30px;
+        width: 70px;
+        line-height: 30px;
+        color: #9392ff;
+        background: #f4f4ff;
+        border: 1px solid #9392ff;
+        text-align: center;
+        display: inline-block;
+        border-radius: 5px;
+      }
+
+      .nor {
+        height: 30px;
+        width: 70px;
+        line-height: 30px;
+        color: #979797;
+        background: #fff;
+        border: 1px solid #fff;
+        text-align: center;
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.simple-problem {
+  .dian {
+    img {
+      width: 10px;
+      margin-right: 5px;
+    }
+    min-height: 44px;
+    padding: 10px 0;
+    background-color: rgba(242, 242, 242, 0.45);
+    padding-left: 15px;
+    font-size: 14px;
+    color: #000;
+    overflow: visible;
+    font-weight: 400;
+  }
+
+  .arrow-right {
+    float: right;
+    width: 8px;
+    height: 13px;
+    margin-right: 10px;
+    position: inherit;
+  }
+  .item {
+    height: 44px;
+    line-height: 44px;
+    margin-left: 15px;
+    font-size: 14px;
+    color: #000000;
+    overflow: hidden;
+    background: url(../asset/small_right.png);
+    background-repeat: no-repeat;
+    background-size: 8px 13px;
+    background-position: right 15px center;
+    font-weight: 400;
+  }
+  .itemtitle {
+    height: 44px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-right: 23px;
+    overflow: hidden;
+    width: 90%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .bd-t {
+    position: relative;
+  }
+
+  .bd-t:before {
+    content: '  ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #e6e6e6;
+    color: #e6e6e6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+
+  .line-1px {
+    clear: both;
+    height: 1px;
+    background: #fafafa;
+  }
+
+  .answeritem {
+    margin-left: 15px;
+    font-weight: 400;
+  }
+
+  .questiontitle {
+    line-height: 22px;
+  }
+  .answer {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1c82de;
+  }
+  .answercontent {
+    margin-top: 10px;
+    padding-bottom: 19px;
+    padding-right: 15px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #909090;
+    // border-bottom: 1px solid #E6E6E6;
+  }
+  pre {
+    white-space: pre-wrap; /*css-3*/
+    white-space: -moz-pre-wrap; /*Mozilla,since1999*/
+    white-space: -pre-wrap; /*Opera4-6*/
+    white-space: -o-pre-wrap; /*Opera7*/
+    word-wrap: break-word; /*InternetExplorer5.5+*/
+    font-size: 12px;
+    background: #fff;
+    border: none;
+    /*设置中文英文对齐*/
+    text-align: justify;
+    word-break: break-all;
+    padding: 0;
+    line-height: 20px;
+    color: #909090;
+  }
+}

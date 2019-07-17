@@ -1,0 +1,94 @@
+.income-details {
+  .detail-li {
+    background: #fff;
+    color: #fff;
+    font-size: 12px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+
+    div {
+      height: 28px;
+      padding: 0 8px;
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+      align-items: center;
+      -webkit-align-items: center;
+      background: #999;
+    }
+
+    .bgRed {
+      background: #fa5e4a;
+    }
+
+    .bgGreen {
+      background: #45b18b;
+    }
+  }
+
+  .postion-back {
+    height: 70px;
+  }
+
+  .no-data {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-top: 140px;
+
+    img {
+      width: 125px;
+      height: 117px;
+    }
+
+    span {
+      margin-top: 20px;
+      color: #909090;
+      font-size: 15px;
+    }
+  }
+  .bottomText {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    align-items: center;
+    -webkit-align-items: center;
+    font-size: 12px;
+    height: 20px;
+    color: #bfbfbf;
+    margin-bottom: 30px;
+    :first-child {
+      display: block;
+      width: 20%;
+      height: 1px;
+      transform: scaleY(0.5);
+      transform-origin: 0 0;
+      -webkit-transform: scaleY(0.5);
+      -webkit-transform-origin: 0 0;
+      overflow: hidden;
+      border: 1px solid #d8d8d8;
+    }
+    :last-child {
+      display: block;
+      width: 20%;
+      height: 1px;
+      border: 1px solid #d8d8d8;
+      transform: scaleY(0.5);
+      transform-origin: 0 0;
+      -webkit-transform: scaleY(0.5);
+      -webkit-transform-origin: 0 0;
+      overflow: hidden;
+    }
+  }
+}

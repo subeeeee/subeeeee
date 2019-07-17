@@ -1,0 +1,80 @@
+.advDetail {
+  .titleBack {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 23px;
+    font-size: 18px;
+    color: #000000;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+  }
+  .time {
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .roofPlace {
+    background-color: #ee4634;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: PingFangSC-Light;
+    font-weight: 300;
+    line-height: 15px;
+    text-align: center;
+    margin-right: 6px;
+    padding: 1px 5px;
+    border-radius: 2px;
+  }
+  .marketRead {
+    width: 61px;
+    height: 15px;
+    border: 1px solid #ee4634;
+    font-size: 12px;
+    color: #ee4634;
+    text-align: center;
+    line-height: 15px;
+    padding: 0px 4px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    border-radius: 2px;
+  }
+  .author {
+    font-size: 12px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: #909090;
+    padding-right: 8px;
+  }
+  .yearAndMonth {
+    font-size: 12px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: #909090;
+  }
+  .bigBoxs {
+    padding-left: 15px;
+    padding-right: 14px;
+    margin-top: -10px;
+    pre {
+      margin-top: 10px;
+      color: #4d4f51;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 15px;
+      white-space: pre-wrap; /*css-3*/
+      white-space: -moz-pre-wrap; /*Mozilla,since1999*/
+      white-space: -pre-wrap; /*Opera4-6*/
+      white-space: -o-pre-wrap; /*Opera7*/
+      word-wrap: break-word; /*InternetExplorer5.5+*/
+      background: #fff;
+      border: none;
+      letter-spacing: 1px;
+      padding-left: 0px;
+      padding-right: 0px;
+      font-family: PingFangSC-Regular;
+      // text-indent: 30px;
+      word-break: break-all;
+    }
+  }
+}
