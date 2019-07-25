@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>原型和原型链</title>
+</head>
+<body>
+<div id="div1">原型和原型链</div>
+<div id="div2"></div>
+</body>
+<script>
+    console.group('jq')
+    function Elem(id) {
+        this.elem = document.getElementById(id)
+    }
+    Elem.prototype.html = function (val) {
+        let elem = this.elem;
+        if(val){
+            elem.innerHTML = val
+        }else{
+            return elem.innerHTML
+        }
+        return this
+    }
+    Elem.prototype.on = function (type, fn) {
+        let elem = this.elem;
+        elem.addEventListener(type,fn);
+        return this
+    }
+    let div1 = new Elem('div1');
+    console.log(div1.html());
+    div1.html('123');
+    let div2 = new Elem('div2');
+    div2.html('<p>1333323</p><p>asdf</p>')
+        .on('click',function () {
+            console.log(this);
+        }).html('hahahah')
+    console.log(div1.html());
+
+    console.groupEnd();
+
+    console.group('原型');
+
+
+    function Men(name,age) {
+        this.name = name;
+        this.age = age;
+        this.class = 'class-1'
+    }
+    let f = new Men('张三',20);
+    console.log(Men.constructor)
+
+    console.log(f.constructor === Men)//true
+
+    console.log(f.__proto__ === Men)//false
+    console.log(f.__proto__ === Men.constructor)//false
+
+    console.log(f.__proto__ === Men.prototype)// true
+ </script>
+</html>
