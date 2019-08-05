@@ -1,0 +1,17 @@
+.pledge{
+    padding-bottom: 30px;
+}
+.pledge .pledgeType{
+    width:80% !important;
+}
+.pledge .rentInfo{
+    height: 82px;
+    line-height: 82px;
+}
+.pledge .price{
+    width:80%;
+}
+.pledge .resultWidth{
+    width: 80% !important;
+
+}

@@ -1,0 +1,41 @@
+.welcome {
+  position: relative;
+  background: #fff;
+  height: 100vh;
+  line-height: 24px;
+}
+.welcome .userInfo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 250px;
+  width: 450px;
+  text-align: center;
+  background: #f4f4f4;
+  border-radius: 20px;
+  border: #ccc 2px solid;
+}
+.handPic {
+  margin: 0 auto;
+  transform: translateY(-50%);
+  width: 100px;
+  background: #fff;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #eee;
+}
+.handPic img{
+  width:80%;
+  text-align: center;
+  transform: translateY(5px)
+}
+.username{
+  font-size: 24px;
+  line-height: 50px;
+}
+.comeText{
+  font-size: 26px;
+  line-height: 30px;
+
+}

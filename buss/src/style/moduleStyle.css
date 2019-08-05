@@ -1,0 +1,140 @@
+/* 表格 */
+.tableInfo{
+    border:1px #BAC4CF solid;
+}
+.tableInfo .table_tr_header{
+    font-weight: 600;
+}
+.tableInfo .table_tr{
+    border-bottom: 1px #BAC4CF solid;
+}
+.tableInfo .table_td{
+    border-right: 1px #BAC4CF solid;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+.table_height .el-col-24{
+  display: flex;
+}
+.tableInfo .table_td .importent{
+    color: red;
+}
+.tableInfo .table_tr:last-child,.table_td:last-child{
+    border: none;
+}
+.mark_table_line {
+    margin-bottom: 10px;
+}
+.mark_table_div {
+    line-height: 30px;
+    text-align: center
+}
+.clear_border {
+    border:none !important;
+}
+/* textarea */
+.textarea_module .table_td{
+  border-right: none;
+}
+.textareawrap{
+    height:90%;
+    border-left: 1px solid #BAC4CF;
+}
+.textarea_module .textarea{
+    width:98% !important;
+    margin:10px auto;
+    height: 100%;
+    box-sizing: border-box
+}
+.textarea_module .textarea textarea{
+    width: 100%;
+    height: 90%;
+    border-radius: 3px;
+    resize:none;
+    font-family: '微软雅黑';
+    font-size: 14px;
+    box-sizing: border-box;
+    border:1px solid #ccc;
+    border-color: #d1dbe5;
+}
+.textarea_disabled{
+    background-color: #eef1f6;
+}
+.textarea_bh{
+  background-color: #FFFFFF !important;
+  color: #000000;
+}
+
+.buttom_btn_warp{
+    margin-bottom: 30px;
+}
+.buttom_btn{
+    width: 60%;
+    margin: 0 auto
+}
+
+/*a 标签的颜色*/
+.a_href{
+    color:#409eff;
+    font-size: 14px !important;
+    padding: 8px 25px !important;
+    margin: 0 auto;
+
+}
+.a_href:hover{
+    text-decoration: underline
+}
+.no_border_text{
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center
+}
+/* 最下方操作按钮样式 */
+
+.bottom_condition_btn{
+    padding-left: 15px !important;
+    padding-right:15px !important;
+    margin:0 auto !important;
+    margin-bottom: 30px !important;
+
+}
+.last_btn_wrap{
+    width: 100%;
+    position: relative;
+    height: 46px;
+}
+.last_btn_wrap .last_btn_box{
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.last_btn_wrap .last_btn_box::after{
+    content: '';
+    clear: both;
+}
+.last_btn_wrap .last_btn{
+    float: left;
+    margin:5px 20px
+}
+.table_title{
+  height: 90px;
+}
+.font_red{
+  color:red !important
+}
+.public .custom_class_550{
+  width: 550px;
+
+}
+
+
+
+
+
+
+
+
+

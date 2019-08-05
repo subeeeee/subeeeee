@@ -1,0 +1,36 @@
+/* 表格 */
+.addOrder .borrowerInfo{
+    border: 1px #BAC4CF solid;
+    width:95%;
+    margin: 0 auto
+}
+
+.addordertableselect{
+    box-sizing: border-box;
+    padding:0 30px;
+}
+.select_width{
+    width: 100%;
+}
+.housePhoto{
+    height:150px;
+    line-height: 150px;
+}
+.housePhotoPage{
+    text-align: left;
+
+}
+.housePhotoPage img{
+    height: 130px;
+    margin: 10px;
+}
+.houseCardNum{
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 3px 5px 2px 5px;
+    width: 80px;
+}
+.addImg{
+    width:95%;
+    margin: 0 auto
+}

@@ -1,0 +1,21 @@
+.formData{
+	width: 90%;
+	margin: 0 auto;
+}
+.el-form-item__label{
+padding:10px 5px 11px 0 !important;	
+}
+
+.titleTop{
+	margin:20px 0; 
+}
+
+.imgHeight{
+	line-height: 80px !important;
+	height: 80px !important;
+}
+
+/* .textarea{
+	line-height: 60px !important;
+	height: 60px !important;
+} */
