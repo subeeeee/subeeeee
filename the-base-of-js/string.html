@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>string封装replaceAll方法</title>
+</head>
+<body>
+
+</body>
+<script>
+    /**
+     * js中String对象没有replaceAll方法
+     * java使用正则表达式和原生的replace方法封装一个replaceAll方法
+     * @params {reg} String regExp的内容
+     * @params {str} String 要替换的内容
+     *
+     * @return String 返回替换后的String
+     *
+     * */
+    let oldStr = '121235,342,3423,412阿斯扥发345235,24,123412,';
+    String.prototype.replaceAll =function(reg,str){
+        console.log(this)
+       return this.replace(new RegExp(reg,'g'),str);
+    }
+    console.log(oldStr.replaceAll('412阿斯扥发345235','爱的'))
+</script>
+</html>
