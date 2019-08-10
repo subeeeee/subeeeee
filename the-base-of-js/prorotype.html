@@ -35,10 +35,10 @@
     console.log(div1.html());
     div1.html('123');
     let div2 = new Elem('div2');
-    div2.html('<p>1333323</p><p>asdf</p>')
+    div2.html('<p>1333323</p><p>ok</p>')
         .on('click',function () {
             console.log(this);
-        }).html('hahahah')
+        }).html('hahahah');
     console.log(div1.html());
 
     console.groupEnd();
@@ -52,14 +52,14 @@
         this.class = 'class-1'
     }
     let f = new Men('张三',20);
-    console.log(Men.constructor)
+    console.log(Men.constructor);
 
-    console.log(f.constructor === Men)//true
+    console.log(f.constructor === Men);//true
 
-    console.log(f.__proto__ === Men)//false
-    console.log(f.__proto__ === Men.constructor)//false
+    console.log(f.__proto__ === Men);//false
+    console.log(f.__proto__ === Men.constructor);//false
 
-    console.log(f.__proto__ === Men.prototype)// true;
+    console.log(f.__proto__ === Men.prototype);// true;
     console.groupEnd()
  </script>
 </html>
