@@ -1,0 +1,162 @@
+@charset "utf-8";
+.datagrid{
+	display: inline-block;
+	width: 100%;
+}
+
+
+.datagrid1{
+	width: 100%;
+	height: 100%;
+}
+.datagrid1{
+	margin-top: 1px;
+}
+.datagrid1>.el-table>.el-table__header-wrapper{
+	background: #F7F9FB!important;
+}
+.datagrid1 .el-table__header th,
+.datagrid1 .el-table__header .cell {
+	height: 28px!important;
+	line-height: 28px!important;
+	background: #F7F9FB!important;
+}
+.datagrid1>.el-table .caret-wrapper{
+	width: 12px;
+	margin-left: 4px;
+
+}
+.datagrid1>.el-table .caret-wrapper>.sort-caret{
+	left:0px!important;
+}
+.datagrid1 .el-table__expanded-cell{
+	padding: 0px;
+	padding-left: 30px!important;
+}
+.datagrid1 .el-table td,
+.datagrid1  .el-table th{
+	padding: 0px 5px;
+}
+.datagrid1 .el-table td.el-table__expanded-cell{
+	padding-left: ;
+}
+.datagrid1 .el-table td.is-left,
+.datagrid1  .el-table th.is-left{
+	padding-left: 14px;
+}
+
+.datagrid1 .el-table th.is-right{
+	padding-right: 14px;
+	padding-left: 0px;
+}
+.datagrid1 .el-table td.is-right{
+	padding-right: 24px;
+	padding-left: 0px;
+}
+.datagrid1 .el-table td>div.cell{
+	width: auto!important;
+	padding-left: 0px!important;
+}
+.datagrid1 .el-table-column--selection>div.cell{
+	padding: 0px!important;
+}
+.datagrid2 .el-table__body-wrapper{
+	overflow: hidden;
+}
+.datagrid1 .el-table .cell, 
+.el-table th>div{
+	padding: 0px 0px;
+}
+.datagrid2>.el-table>.el-table__fixed,
+.datagrid2>.el-table>.el-table__fixed-right,
+.datagrid3>.el-table>.el-table__fixed,
+.datagrid3>.el-table>.el-table__fixed-right{
+	overflow: hidden;
+	height: 100%!important;
+}
+.el-table td, .el-table th{
+	padding: 0px;
+}
+.el-table__fixed-right{
+	overflow: hidden;
+}
+.datagrid3 .el-table__fixed{
+	overflow: hidden;
+}
+.el-table__fixed{
+	height: 100%!important;
+	overflow: hidden;
+}
+.el-table__row.hover-row>td{
+	background-color: transparent!important;
+}
+.el-table__row.active-row>td{
+	background-color: #eef1f6!important;
+}
+
+.el-table td, 
+.el-table th.is-leaf, 
+.el-table--border th, 
+.el-table__fixed-right-patch{
+	border-bottom: 1px solid #dfe6ec!important;
+	font-size: 12px;
+	color: #243546;
+	line-height: 18px;
+}
+.el-table--border td, 
+.el-table--border th{
+	border-right: 1px solid #dfe6ec!important;
+}
+.datagrid1>.el-table{
+	border-top: 1px solid #dfe6ec;
+}
+.el-table-column--selection>.cell{
+	text-align: center;
+}
+.el-table .sort-caret.descending{
+	bottom: 8px!important;
+}
+.el-loading-mask{
+	z-index: 10!important;
+}
+.el-tooltip {
+	cursor: pointer;
+}
+
+.el-table td,
+.el-table th {
+	font-size: 12px;
+	padding-top: 0px!important;
+	padding-bottom: 0px!important;
+}
+
+.el-table__fixed-footer-wrapper .cell,
+.el-table__fixed-footer-wrapper tbody td,
+.el-table__footer-wrapper tbody td {
+	background: #FFF2DE;
+}
+
+
+.el-table .sort-caret.ascending {
+	font-size: 12px;
+}
+
+.el-table .sort-caret.descending {
+	font-size: 12px;
+	bottom: 5px;
+}
+
+.el-table td,
+.el-table th.is-leaf,
+.el-table--border th,
+.el-table__fixed-right-patch {
+	border-bottom: 1px solid #F3F3F3 !important;
+}
+
+.el-table--border td,
+.el-table--border th {
+	border-right: 1px solid #F3F3F3 !important;
+}
+.datagrid1 .el-table__footer td>div.cell{
+    word-break: normal!important;
+}

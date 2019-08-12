@@ -1,0 +1,293 @@
+.Report_Custom {
+    * {
+        font-size: 14px;
+        color: #576D7A!important;
+        line-height: 14px;
+    }
+    .el-dialog {
+        width: 582px;
+        height: 475px;
+        .el-dialog__header {
+            height: 42px;
+            padding-top: 0px;
+            padding-left: 20px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            line-height: 42px;
+            border-bottom: 1px solid #EAF1F6;
+            .el-dialog__title {
+                line-height: 16px;
+                font-size: 16px;
+                color: #34495E;
+                letter-spacing: 0;
+                cursor: default;
+            }
+            .el-dialog__headerbtn {
+                top: 10px;
+                right: 10px;
+                float: right;
+            }
+        }
+        .el-dialog__body{
+            float: left;
+            width: 100%;
+            .Custom_context {
+                float: left;
+                width: 100%;
+                .templateName {
+                    height: 30px;
+                    margin: 20px 0px;
+                    text-align: left;
+                    padding-left: 30px;
+                    
+                    .el-select__tags{
+                        display: none;
+                    }
+                    .el-input-group__prepend {
+                        border: 0px!important;
+                        padding-left: 0px;
+                        padding-right: 14px;
+                    }
+                    .el-input-group__append{
+                        
+                    }
+                    .el-input-group__append {
+                        .el-input__inner {
+                            border: 0px!important;
+                            height: 28px!important;
+                        }
+                    }
+                    .el-icon-circle-close,
+                    .el-icon-circle-check {
+                        cursor: pointer;
+                        color: #878d99;
+                    }
+                }
+                .el-button--text>span {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                .field_context{
+                    width: 100%;
+                    float: left;
+                    height: auto;
+                    .hidden_field,
+                    .show_field{
+                        width: 220px;
+                        height: 282px;
+                        float: left;
+                        margin-left: 30px;
+                        background: #FFFFFF;
+                        border: 1px solid #D8E5EC;
+                        border-radius: 3px;
+                        overflow: hidden;
+                        .title{
+                            height: 32px;
+                            display: inline-block;
+                            width: 100%;
+                            font-size: 14px;
+                            color: #9AABB8;
+                            cursor: default;
+                            line-height: 32px;
+                            background: #F4F9FC;
+                            text-indent: 15px;
+                        }
+                        .hidden_field_context,
+                        .show_field_context{
+                            width: 100%;
+                            height: 250px;
+                            overflow: hidden;
+                            overflow-y: auto;
+                        }
+                        .el-tree-node__expand-icon.expanded{
+                            visibility: hidden;
+                            padding:2px;
+                        }
+                        span.el-tree-node__expand-icon.el-icon-caret-right.is-leaf{
+                            padding:1px;
+                            visibility: hidden;
+                        }
+                        .el-tree-node__content{
+                            height: 32px;
+                            text-align: left;
+                        }
+                        .el-tree-node__content div{
+                            color: #34495E;
+                        }
+                        .el-tree-node:focus>.el-tree-node__content, 
+                        .el-tree-node__content:hover{
+                            background-color:#F2F6FB;
+                        }
+                        .el-tree-node{
+                            position: relative;
+                        }
+                        .custom_edit_tree{
+                            position: absolute;
+                            right: 5px;
+                            top: 7px;
+                            display: none;
+                        }
+                        .custom_edit_tree>a{
+                             color: #C1CED6;
+                        }
+                        .el-tree-node__content:hover>span>.edit_tree{
+                             display: inline-block;
+                        }
+                        .UpName{    
+                            display: inline-block;
+                            float: right;  
+                            height: 25px;    
+                            line-height: 25px;                  
+                            .CloseUpName,
+                            .SaveUpName{
+                                font-size: 16px;
+                                color: #34495E;
+                                margin-left: 5px;
+                            }
+                        }
+                        input{
+                            border: 1px solid #D8E5EC;
+                        }
+                    }
+                    .show_field{
+                        margin-left: 0px;
+                    }
+                    .field_edit,
+                    .field_sort{
+                        float: left;
+                        width: 44px;
+                        height: 284px;
+                        text-align: center;
+                        .el-button{
+                            width: 24px;
+                            height: 24px;
+                            padding: 0px;
+                            margin: 3px 0px;
+                            min-width: 0px;
+                            i{
+                                margin-left: 0px!important;
+                            }
+                        }
+                       
+                        .el-button:hover{
+                            background-color: white;
+                            border: 1px solid #D8E5EC;
+                        }
+                    }
+                    .field_edit{
+                         .el-button:first-child{
+                            margin-top: 82px;
+                        }
+                    }
+                }
+            }
+        }
+        .el-dialog__footer{
+            float: left;
+            width: 100%;
+            height: 60px;
+            padding: 0px;
+            margin-top: 20px;
+            background: #F4F9FC;
+            text-align: center;
+            line-height: 60px;
+        }
+    }
+}
+.CustomClass{
+    .el-message-box__header{
+        height: 0px;
+        overflow: hidden;
+        padding: 0px;
+        border: 0px;
+    }
+    .el-message-box__message{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .el-message-box__status{
+        margin-top: -32px;
+        margin-left: 20px;
+    }
+    .el-message-box__input{
+        text-align: center;
+        .el-input,
+        .el-input__inner{
+            height: 28px;
+            width: 95%;
+        }
+    }
+}
+.UserTemplate-item{
+    .el-select-dropdown__item{
+        padding: 0px 8px;
+        span{
+            font-size: 14px;
+            color: #34495E;
+            line-height: 18px;
+            float: left;
+        }
+        span:last-child{
+            float: right;
+        }
+        span:first-child{
+            width: 70%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            float: left;
+        }
+    }
+    i{
+        color: #C1CED6;
+        padding: 0px 2px;
+    }
+    .el-select-dropdown__item.hover{
+        background-color: transparent;
+    }
+    .el-select-dropdown__item:hover{
+        background-color: #f5f7fa;
+    }
+    .el-select-dropdown__item.selected{
+        background: #F2F6FB; 
+    }
+    .el-select-dropdown__item.selected::after{
+        display: none;
+    }
+}
+.customClass-warning{
+    position: relative;
+    width: 360px!important;
+    height: 200px!important;
+    background: #FFFFFF!important;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.20)!important;
+    border-radius: 4px!important;
+    padding: 0px!important;
+    .el-message-box__header{
+        height: 0px;
+        border:0px;
+        overflow: hidden;
+    }
+    .el-message-box__content{
+        margin-top: 30px;
+        .el-icon-warning{
+            margin-left: 30px;
+        }
+        .el-message-box__message{
+            padding-left: 60px;
+            p{
+                font-size: 16px;
+                color: #34495E;
+                line-height: 16px;
+            }
+        }
+    }
+    .el-message-box__btns{
+        position: absolute;
+        bottom: 20px;
+        padding: 0px;
+        right: 28px;
+    }
+}
+.CustomItemClass .el-input{
+    
+}

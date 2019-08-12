@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03CRM首页-第一期-门店下拉" transform="translate(-1505.000000, -381.000000)">
+            <g id="删除-hover" transform="translate(1505.000000, 381.000000)">
+                <g id="Group-16">
+                    <rect id="Rectangle-10-Copy" fill="#C1CED6" x="5" y="6" width="1" height="5" rx="0.5"></rect>
+                    <rect id="Rectangle-10-Copy-2" fill="#C1CED6" x="8" y="6" width="1" height="5" rx="0.5"></rect>
+                    <path d="M2.5,3.5 L2.5,12 C2.5,12.8284271 3.17157288,13.5 4,13.5 L10,13.5 C10.8284271,13.5 11.5,12.8284271 11.5,12 L11.5,3.5 L2.5,3.5 Z" id="Rectangle-6" stroke="#C1CED6" fill-rule="nonzero"></path>
+                    <rect id="Rectangle-3" fill="#C1CED6" x="0" y="3" width="14" height="1" rx="0.5"></rect>
+                    <path d="M3.5,3.5 L10.5,3.5 L10.5,1.33333333 C10.5,0.846953667 10.2397847,0.5 10,0.5 L4,0.5 C3.76021525,0.5 3.5,0.846953667 3.5,1.33333333 L3.5,3.5 Z" id="Rectangle-9" stroke="#C1CED6" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
