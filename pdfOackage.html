@@ -7,11 +7,34 @@
 
 </body>
 <script type="text/javascript">
-	console.log(1+'2'+'2');
-	console.log(1+ + '2'+'2');
-	console.log(1+ -'1'+'2');
-	console.log(+'1'+'1'+'2');
-	console.log('A'-"B"+'2');
-	console.log('A'-"B"+ 2)
+
+    let time1 = Date.parse(new Date());
+     var arrA = [];
+var arrB = [];
+var arrC = [];
+ 
+//求出A数组的值
+for(var i = 0; i < 100000; i++) {
+    arrA.push(i);
+    break;
+}
+//A排序
+arrA.sort(function(a, b) {
+    return Math.random() - 0.5
+})
+//求出B数组的值
+for(var i = 0; i < arrA.length - 2; i++) {
+    arrB[arrA[i]] = arrA[i];
+    //console.log(arrB);
+ 
+}　　　　//如果B数组里的第i项为undefind，打印出i放在arrC
+for(var i = 0; i<arrB.length; i++){
+    if(arrB[i] == undefined){
+        arrC.push(i);
+    }
+}
+    let time2 = Date.parse(new Date());
+    console.log(time2)
+console.log((time2-time1));
 </script>
 </html>
