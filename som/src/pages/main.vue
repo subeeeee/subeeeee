@@ -2,6 +2,7 @@
   <div>
     <button @click="vuexRouterChange">vuex-learn</button>
     <button @click="axiosRouterChange">axios-learn</button>
+    <button @click="routeRouterChange">router-learn</button>
   </div>
 </template>
 
@@ -29,6 +30,15 @@
           params:{
             pagename:'axios_learn',
             code:'1'
+          }
+        })
+      },
+      routeRouterChange(){
+        this.$router.push({
+          name:'router_son1',
+          params:{
+            name:'route_son_1',
+            f_name:'f_name_1'
           }
         })
       }

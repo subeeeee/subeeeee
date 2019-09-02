@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import router from './../router'
+
 Vue.use(Vuex)
 
 let state = {
@@ -9,10 +11,12 @@ let state = {
     { name: 'Jack', sex:'1', score:'83' },
     { name: 'xiaoming', sex:'2', score:'90' },
     { name: 'Marry', sex:'2', score:'100' }
-  ]
+  ],
+  router_change_name:''
 };
 let getters = {
   count:state=>state.count,
+  router_change_name:state=>state.router_change_name,
   excellent:(state,getter)=>{
     // getter.count
     return state.language.filter(item=>item.score>=90)
@@ -27,6 +31,14 @@ let getters = {
 let mutations = {
   ADD_COUNT (state) {
     state.count++
+  },
+  CHANGE_ROUTE_SON_NAME(state,{name,index,params}){
+    console.log(name);
+    state.router_change_name = name;
+    router.push({
+      name:`router_son${index}`,
+      params
+    })
   }
 };
  const actions = {

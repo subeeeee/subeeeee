@@ -18,6 +18,34 @@ const axios = [
     component: ()=>import('@/pages/request/axios')
   },
 ]
+const route_son = [
+  {
+    path: 'router_son1/:name',
+    name: 'router_son1',
+    component: ()=>import('@/pages/router/son/son1'),
+  },
+  {
+    path: 'router_son2/:name',
+    name: 'router_son2',
+    component: ()=>import('@/pages/router/son/son2'),
+  },
+  {
+    path: 'router_son3/:name',
+    name: 'router_son3',
+    component: ()=>import('@/pages/router/son/son3'),
+  }
+]
+
+const route = [
+  {
+    path: '/router_father/:f_name',
+    name: 'router_father',
+    component: ()=>import('@/pages/router/father'),
+    children:[ ...route_son ]
+
+
+  }
+]
 export default new Router({
   routes: [
     {
@@ -26,6 +54,7 @@ export default new Router({
       component: ()=>import('@/pages/main')
     },
     ...vuex,
-    ...axios
+    ...axios,
+    ...route
   ]
 })
