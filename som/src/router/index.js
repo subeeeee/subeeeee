@@ -9,6 +9,14 @@ const vuex = [
     name: 'vuex_father',
     component: ()=>import('@/pages/vuex/father')
   },
+];
+
+const axios = [
+  {
+    path: '/axios/:pagename/learn',
+    name: 'axios_learn',
+    component: ()=>import('@/pages/request/axios')
+  },
 ]
 export default new Router({
   routes: [
@@ -18,5 +26,6 @@ export default new Router({
       component: ()=>import('@/pages/main')
     },
     ...vuex,
+    ...axios
   ]
 })
