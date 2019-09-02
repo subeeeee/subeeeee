@@ -46,7 +46,7 @@ const route = [
 
   }
 ]
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -58,3 +58,16 @@ export default new Router({
     ...route
   ]
 })
+
+router.beforeEach((t,f,n)=>{
+  console.log(t,f,n)
+  n()
+})
+
+
+
+
+
+
+
+export default router
