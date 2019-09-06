@@ -3,6 +3,7 @@
     <button @click="vuexRouterChange">vuex-learn</button>
     <button @click="axiosRouterChange">axios-learn</button>
     <button @click="routeRouterChange">router-learn</button>
+    <button @click="flexRouterChange">flex-learn</button>
   </div>
 </template>
 
@@ -40,6 +41,11 @@
             name:'route_son_1',
             f_name:'f_name_1'
           }
+        })
+      },
+      flexRouterChange(){
+        this.$router.push({
+          name:'flex'
         })
       }
     }

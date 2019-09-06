@@ -46,6 +46,26 @@ const route = [
 
   }
 ]
+
+const flex = [
+  {
+    path: '/flex',
+    name: 'flex',
+    component: ()=>import('@/pages/flex/flex'),
+
+
+  }
+]
+
+
+
+
+
+
+
+
+
+
 const router = new Router({
   routes: [
     {
@@ -55,7 +75,13 @@ const router = new Router({
     },
     ...vuex,
     ...axios,
-    ...route
+    ...route,
+    ...flex,
+    {
+      path: '*',
+      name: '404',
+      component: ()=>import('@/pages/errorPage/errorPage')
+    },
   ]
 })
 

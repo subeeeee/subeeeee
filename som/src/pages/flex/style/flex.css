@@ -1,0 +1,51 @@
+
+/*https://www.runoob.com/w3cnote/flex-grammar.html*/
+
+.father{
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000;
+  flex-direction: row;
+
+  /*
+    flex-direction:
+      row:从左到右 (默认)
+      row-reverse:从右到左
+      column:从上到下
+      column-reverse:从下到上
+  */
+  flex-wrap: nowrap;
+  /*
+    flex-wrap:
+      nowrap:不换行 (默认)
+      warp:换行
+      warp-reverse:从最下方开始  向上换行
+  */
+  flex-flow: row nowrap;
+  /*
+    flex-flow:
+      flex-direction 和 lex-wrap 的简写形式
+
+  */
+  justify-content:space-around;
+  /*
+     justify-content:
+       flex-start: 左对齐(默认)
+       flex-end: 右对齐
+       center: 居中
+       speace-around: 等距离分开,左右留白
+       speace-around: 等距离分开,左右靠边
+
+ */
+  align-items:stretch;
+  /*
+     align-items:
+      stretch: 高等于父级 (默认)
+      flex-start:顶端对齐 高自适应
+      flex-end:底部对齐 高自适应
+      center:居中
+      baseline: 第一行文字的基线对齐
+  */
+
+}
