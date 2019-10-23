@@ -1,10 +1,16 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
+  "name": "server",
+  "version": "1.0.0",
+  "description": " 后台服务",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
   },
-  "exclude": [
-    "../node_modules"
-  ]
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "glob": "^7.1.4",
+    "koa": "^2.10.0",
+    "koa-router": "^7.4.0"
+  }
 }
