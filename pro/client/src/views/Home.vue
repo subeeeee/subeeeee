@@ -1,18 +1,21 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>home</h1>
+    <button @click="request">request</button>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+  import requestMock from './../api/api'
 
 export default {
   name: "home",
   components: {
-    HelloWorld
+  },
+  methods:{
+    request(){
+      requestMock.getdata()
+    }
   }
 };
 </script>

@@ -4,16 +4,16 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-const port = process.env.port || process.env.npm_config_port || 9527
-
+const port = process.env.port || process.env.npm_dev_port || 9527
 const name = 'BillingSystem'
 
 module.exports = {
-  publicPath: 'trutheye-fe',
+  publicPath: 'web',
   outputDir: 'dist',
   lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
-  devServer: {
+  runtimeCompiler: true,
+  devServer: { // 配置 webpack-dev-server 行为。
     port: port,
     open: true,
     overlay: {

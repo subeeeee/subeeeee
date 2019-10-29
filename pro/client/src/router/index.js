@@ -1,9 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-
+import Nprogress from 'nprogress'
+import 'nprogress/nprogress.css'
 Vue.use(VueRouter);
-
+import loading from './../utils/loading'
 const routes = [
   {
     path: "/",
@@ -24,5 +25,19 @@ const routes = [
 const router = new VueRouter({
   routes
 });
+router.beforeEach((to, from, next) => {
+  Nprogress.start()
+  loading.open()
+  setTimeout(() => {
+    next()
+  }, 2000)
+
+})
+router.afterEach((to, from) => {
+  Nprogress.done()
+  loading.close()
+})
+
+
 
 export default router;
