@@ -30,7 +30,7 @@ router.beforeEach((to, from, next) => {
   loading.open()
   setTimeout(() => {
     next()
-  }, 2000)
+  }, 300)
 
 })
 router.afterEach((to, from) => {

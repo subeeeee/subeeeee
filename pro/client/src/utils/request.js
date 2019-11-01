@@ -14,7 +14,9 @@ export class BaseRequest {
       transformRequest: [data => qs.stringify(data)]
     }
     this.request.interceptors.request.use(config => {
+      console.log(config)
       config.headers['Content-Type'] = 'application/x-www-form-urlencoded'
+      return config
     })
   }
 }

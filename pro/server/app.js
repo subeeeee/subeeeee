@@ -8,31 +8,30 @@ const fs = require('fs')
 
 const app = new Koa();
 const router = new Router({
-    prefix:'/api'
+  prefix:'/api'
 });
 console.log(1);
 console.log(glob.sync(resolve('./api', "./tsconfig.json")));
 console.log(1);
 glob.sync(resolve('./api', "**/*.json")).forEach((item, i) => {
-    let apiJsonPath = item && item.split('/api')[1];
-    let apiPath = apiJsonPath.replace('.json','');
-    console.log(apiPath)
-    router.get(apiPath,(ctx,next)=>{
-        // console.log(fs.readFileSync(item).toString())
-        // ctx.body ={
-        //     name:1
-        // }
-        try{
-            let jsonStr = fs.readFileSync(item).toString();
-                ctx.body = {
-                    data: JSON.parse(jsonStr),
-                    state: 200,
-                    type: 'success'
-                }
-        }catch(err){
-            ctx.throw('server on errror')
-        }
-    })
+  let apiJsonPath = item && item.split('/api')[1];
+  let apiPath = apiJsonPath.replace('.json','');
+  console.log(apiPath)
+  router.get(apiPath,(ctx,next)=>{
+    ctx.set('Access-Control-Allow-Origin', 'http://localhost:8888');
+    try{
+      console.log(apiPath)
+      let jsonStr = fs.readFileSync(item).toString();
+      jsonStr = JSON.stringify(ctx)
+      ctx.body = {
+        data: JSON.parse(jsonStr),
+        state: 200,
+        type: 'success'
+      }
+    }catch(err){
+      ctx.throw('server on errror')
+    }
+  })
 })
 
 
@@ -43,12 +42,12 @@ glob.sync(resolve('./api', "**/*.json")).forEach((item, i) => {
 
 
 router.get('/name',(ctx,next)=>{
-    ctx.body = {name:'asdf'}
+  ctx.set('Access-Control-Allow-Origin', 'http://localhost:8888');
+
+  ctx.body = {name:'asdf'}
 })
 
-app
-    .use(router.routes())
-    .use(router.allowedMethods())
+app.use(router.routes()).use(router.allowedMethods())
 
 
 

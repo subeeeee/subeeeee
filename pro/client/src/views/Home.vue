@@ -2,6 +2,8 @@
   <div class="home">
     <h1>home</h1>
     <button @click="request">request</button>
+    <br>
+    <button @click="requestName">requestName</button>
   </div>
 </template>
 
@@ -15,6 +17,9 @@ export default {
   methods:{
     request(){
       requestMock.getdata()
+    },
+    requestName(){
+      requestMock.getName()
     }
   }
 };
