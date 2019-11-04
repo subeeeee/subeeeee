@@ -6,6 +6,7 @@
 **/.project*
 **/*.zip
 **/.vscode
+**/node_modules/
 
 
 # Editor directories and files
