@@ -3,8 +3,8 @@ const Router = require('koa-router');
 const glob = require("glob");
 const { resolve } = require('path')
 const fs = require('fs')
-
-
+const {localIP } = require('./util/getIP');
+let PORT = '8023'
 
 const app = new Koa();
 
@@ -27,10 +27,11 @@ glob.sync(resolve('./api', "**/*.json")).forEach((item, i) => {
   let apiPath = apiJsonPath.replace('.json','');
   console.log(apiPath)
   router.get(apiPath,(ctx,next)=>{
+    console.log(ctx.request.query)
+    console.log(apiPath)
     try{
-      console.log(apiPath)
       let jsonStr = fs.readFileSync(item).toString();
-      jsonStr = JSON.stringify(ctx)
+      jsonStr = JSON.stringify(ctx.request.query)
       ctx.body = {
         data: JSON.parse(jsonStr),
         state: 200,
@@ -61,5 +62,6 @@ app.use(router.routes()).use(router.allowedMethods())
 
 
 
-console.log('serveice is ready')
-app.listen(3000);
+app.listen(PORT);
+
+console.log(`>>> serveice is ready at ${localIP}:${PORT}`)

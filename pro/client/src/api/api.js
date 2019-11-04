@@ -1,19 +1,24 @@
 import { BaseRequest } from  './../utils/request'
 class RequestMock extends BaseRequest {
   getdata(page = 0) {
-    let data = {
-      page,
-      name:1
-    }
-    return this.request.get({
+    return this.request({
+      method:'get',
       url:"/data",
-      params:{
+      data:{
         sd:12
       }
     })
   };
-  getName(page = 0) {
-    return this.request.get('/name')
+  getName(data={}) {
+    data = {
+      a:1,
+      b:2
+    }
+    return this.request({
+      method:'post',
+      data
+    })
+
   }
 }
 
