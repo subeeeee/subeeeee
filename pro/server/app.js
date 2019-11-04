@@ -7,18 +7,26 @@ const fs = require('fs')
 
 
 const app = new Koa();
+
+app.use(async (ctx, next)=> {
+  ctx.set('Access-Control-Allow-Origin', 'http://localhost:8888');
+  ctx.set('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild');
+  ctx.set('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
+  if (ctx.method == 'OPTIONS') {
+    ctx.body = 200;
+  } else {
+    await next();
+  }
+});
+
 const router = new Router({
   prefix:'/api'
 });
-console.log(1);
-console.log(glob.sync(resolve('./api', "./tsconfig.json")));
-console.log(1);
 glob.sync(resolve('./api', "**/*.json")).forEach((item, i) => {
   let apiJsonPath = item && item.split('/api')[1];
   let apiPath = apiJsonPath.replace('.json','');
   console.log(apiPath)
   router.get(apiPath,(ctx,next)=>{
-    ctx.set('Access-Control-Allow-Origin', 'http://localhost:8888');
     try{
       console.log(apiPath)
       let jsonStr = fs.readFileSync(item).toString();
@@ -42,13 +50,11 @@ glob.sync(resolve('./api', "**/*.json")).forEach((item, i) => {
 
 
 router.get('/name',(ctx,next)=>{
-  ctx.set('Access-Control-Allow-Origin', 'http://localhost:8888');
 
   ctx.body = {name:'asdf'}
 })
 
 app.use(router.routes()).use(router.allowedMethods())
-
 
 
 
